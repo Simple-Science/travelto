@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive ecommerce website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Travel</a>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#deals">Deals & Packages</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+
+		<div class="header-icons">
+
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<div class="sidebar close">
+		<div class="logo-details">
+			<i class='bx bxs-plane-take-off'></i>
+			<span class="logo_name">Travel</span>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="#">
+					<i class='bx bx-grid-alt'></i>
+					<span class="link_name">Dashboard</span>
+				</a>
+				<ul class="sub-menu blank">
+					<li><a class="link_name" href="index.html">Dashboard</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="iocn-link">
+					<a href="#">
+						<i class='bx bx-collection'></i>
+						<span class="link_name">Category</span>
+					</a>
+					<i class='bx bxs-chevron-down arrow'></i>
+				</div>
+				<ul class="sub-menu">
+					<li><a class="link_name" href="#">Category</a></li>
+					<li><a href="Johor Bahru.html">Johor Bahru</a></li>
+					<li><a href="Pahang.html">Pahang</a></li>
+					<li><a href="Terengganu.html">Terengganu</a></li>
+					<li><a href="Sabah & Sarawak.html">Sabah & Sarawak</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="iocn-link">
+					<a href="#">
+						<i class='bx bx-plug'></i>
+						<span class="link_name">Download on Mobile</span>
+					</a>
+				</div>
+				<ul class="sub-menu">
+					<li><a class="link_name" href="#">Download on Mobile</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-log-out'></i>
+					<span class="link_name">Logout</span>
+				</a>
+				<ul class="sub-menu blank">
+					<li><a class="link_name" href="parallax.html">Logout</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-info-circle'></i>
+				  <span class="link_name">More Coming Soon</span>
+				</a>
+				<ul class="sub-menu blank">
+				  <li><a class="link_name" href="#">More Coming Soon</a></li>
+				</ul>
+			  </li>
+			<li>
+				<div class="profile-details">
+					<div class="profile-content">
+						<!--<img src="image/profile.jpg" alt="profileImg">-->
+					</div>
+					<div class="name-job">
+						<div class="profile_name">More Coming</div>
+						<div class="job">Soon</div>
+					</div>
+					<i class='bx bx-info-circle'></i>
+				</div>
+			</li>
+		</ul>
+	</div>
+	let arrow = document.querySelectorAll(".arrow");
+	for (var i = 0; i < arrow.length; i++) { arrow[i].addEventListener("click", (e)=>{
+		let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+		arrowParent.classList.toggle("showMenu");
+		});
+		}
+		let sidebar = document.querySelector(".sidebar");
+		let sidebarBtn = document.querySelector(".bx-menu");
+		console.log(sidebarBtn);
+		sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+		});
+		</script>
+
+		<section class="home" id="home">
+			<div class="home-text">
+				<h1>Travel to <br><span>Sabah & Sarawak</span></h1>
+				<p>Scroll below to choose your destination</p>
+				<a href="#deals" class="btn">View Places</a>
+			</div>
+		</section>
+
+
+		<!--background-->
+		<section class="new" id="deals">
+			<style>
+				body {
+					background-image: url(Sabah\ &\ Sarawak\ bg.jpg);
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-size: cover;
+				}
+			</style>
+			<div class="center-text">
+				<h2>Places in Sabah & Sarawak</h2>
+			</div>
+			<!--pictures & content-->
+			<div class="new-content">
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/Attraction_Review-g298307-d457122-Reviews-Tunku_Abdul_Rahman_Marine_Park-Kota_Kinabalu_Kota_Kinabalu_District_West_Coast_Div.html">
+						<img src="Tunku Abdul Rahman National Park.jpg">
+					</a>
+					<h5>Tunku Abdul Rahman National Park</h5>
+					<h6>Sabah</h6>
+				</div>
+
+				<div class="box">
+					<a href="https://www.sabahtourism.com/destination/lankayan-island/?locale=en">
+						<img src="Lanyakan Beach.jpg">
+					</a>
+					<h5>Lanyakan Beach</h5>
+					<h6>Sabah</h6>
+				</div>
+
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/Attraction_Review-g298306-d482160-Reviews-Mount_Kinabalu-Sabah.html">
+						<img src="Mount Kinabalu.jpeg">
+					</a>
+					<h5>Mount Kinabalu</h5>
+					<h6>Sabah</h6>
+				</div>
+
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/Hotel_Review-g1137936-d5020086-Reviews-Sipadan_Water_Village_Resort_Mabul_Island-Pulau_Mabul_Semporna_District_Sabah.html">
+						<img src="Sipadan Island.jpg">
+					</a>
+					<h5>Sipadan Island</h5>
+					<h6>Sabah</h6>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="new-content">
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/AttractionProductReview-g635753-d17688053-Semporna_Mabul_Kapalai_Island_Snorkelling_Discover_Scuba_Dive_Fundive-Semporna_Sem.html">
+						<img src="Kapalai Island.jpeg">
+					</a>
+					<h5>Kapalai Island</h5>
+					<h6>Sabah</h6>
+				</div>
+
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/Tourism-g1137934-Turtle_Islands_National_Park_Sabah-Vacations.html">
+						<img src="Lanyakan Beach.jpg">
+					</a>
+					<h5>Turtle Islands National Park</h5>
+					<h6>Sabah</h6>
+				</div>
+
+				<div class="box">
+					<a href="https://www.tripadvisor.com.my/Tourism-g298309-Kuching_Sarawak-Vacations.html">
+						<img src="Kuching.jpg">
+					</a>
+					<h5>Kuching</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+				<div class="box">
+					<a href="https://www.tripadvisor.com.my/Tourism-g1642828-Bau_Sarawak-Vacations.html">
+						<img src="Bau.jpg">
+					</a>
+					<h5>Bau</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+			</div>
+		</section>
+		<section>
+			<div class="new-content">
+				<div class="box">
+					<a href="https://www.tripadvisor.com.my/Tourism-g1055332-Sibu_Sarawak-Vacations.html">
+						<img src="Sibu.jpg">
+					</a>
+					<h5>Sibu</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+				<div class="box">
+					<a href="https://www.tripadvisor.com.my/Tourism-g1203001-Bintulu_Sarawak-Vacations.html">
+						<img src="Bintulu.jpg">
+					</a>
+					<h5>Bintulu</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+				<div class="box">
+					<a href="https://www.tripadvisor.com.my/Tourism-g303998-Miri_Miri_District_Sarawak-Vacations.html">
+						<img src="Miri.jpg">
+					</a>
+					<h5>Miri</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+				<div class="box">
+					<a
+						href="https://www.tripadvisor.com.my/Attraction_Review-g1203001-d3462128-Reviews-Similajau_National_Park-Bintulu_Sarawak.html">
+						<img src="Similajau National Park.jpg">
+					</a>
+					<h5>Similajau National Park</h5>
+					<h6>Sarawak</h6>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!----contact--->
+		<section class="contact" id="about">
+
+		</section>
+
+		<div class="last-text">
+			<p>Copyright © 2022 All rights reserved | Travel Team</p>
+		</div>
+
+		<!----scroll top--->
+		<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<!----custom js link--->
+		<script src="script.js"></script>
+
+</body>
+
+</html>

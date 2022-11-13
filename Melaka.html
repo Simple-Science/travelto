@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive ecommerce website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Travel</a>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#deals">Deals & Packages</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+
+		<div class="header-icons">
+			
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<div class="sidebar close">
+		<div class="logo-details">
+		  <i class='bx bxs-plane-take-off'></i>
+		  <span class="logo_name">Travel</span>
+		</div>
+		<ul class="nav-links">
+		  <li>
+			<a href="#">
+			  <i class='bx bx-grid-alt' ></i>
+			  <span class="link_name">Dashboard</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="index.html">Dashboard</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-collection' ></i>
+				<span class="link_name">Category</span>
+			  </a>
+			  <i class='bx bxs-chevron-down arrow' ></i>
+			</div>
+			<ul class="sub-menu">
+				<li><a class="link_name" href="#">Category</a></li>
+				<li><a href="Johor Bahru.html">Johor Bahru</a></li>
+				<li><a href="Pahang.html">Pahang</a></li>
+				<li><a href="Terengganu.html">Terengganu</a></li>
+				<li><a href="Sabah & Sarawak.html">Sabah & Sarawak</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-plug' ></i>
+				<span class="link_name">Download on Mobile</span>
+			  </a>
+			</div>
+			<ul class="sub-menu">
+			  <li><a class="link_name" href="#">Download on Mobile</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+			  <i class='bx bx-log-out'></i>
+			  <span class="link_name">Logout</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="parallax.html">Logout</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+				<i class='bx bx-info-circle'></i>
+			  <span class="link_name">More Coming Soon</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="#">More Coming Soon</a></li>
+			</ul>
+		  </li>
+		  <li>
+		<div class="profile-details">
+		  <div class="profile-content">
+			<!--<img src="image/profile.jpg" alt="profileImg">-->
+		  </div>
+		  <div class="name-job">
+			<div class="profile_name">More Coming</div>
+			<div class="job">Soon</div>
+		  </div>
+		  <i class='bx bx-info-circle' ></i>
+		</div>
+	  </li>
+	</ul>
+	  </div>
+	  <script>
+	  let arrow = document.querySelectorAll(".arrow");
+	  for (var i = 0; i < arrow.length; i++) {
+		arrow[i].addEventListener("click", (e)=>{
+	   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+	   arrowParent.classList.toggle("showMenu");
+		});
+	  }
+	  let sidebar = document.querySelector(".sidebar");
+	  let sidebarBtn = document.querySelector(".bx-menu");
+	  console.log(sidebarBtn);
+	  sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	  });
+	  </script>
+
+	<section class="home" id="home">
+        <div class="home-text">
+            <h1>New Places <br><span>that can be discovered</span></h1>
+            <p>Scroll below to choose your destination</p>
+            <a href="#deals" class="btn">View Places</a>
+        </div>
+    </section>
+
+	
+	<!--background-->
+	<section class="new" id="deals">
+		<style>
+			body{
+		background-image: url(Background\ pic.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+			}
+		</style>
+		<div class="center-text">
+			<h2>Deals & Packages</h2>
+		</div>
+		<!--pictures & content-->
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/a-breathtaking-expedition">
+				<img src="Mount Kinabalu.jpeg">
+				</a>
+				<h5>Mount Kinabalu</h5>
+				<h6>4 Days 3 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/uncover-pulau-kukup-s-celestial-coastline">
+					<img src="Pulau Kukup.jpeg">
+				</a>
+				<h5>Pulau Kukup</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/restored-wonders-of-kong-heng-square">
+					<img src="kongheng2_270x350.jpg">
+				</a>
+				<h5>Kong Heng Square</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/crown-jewel-of-sabah-s-sea">
+					<img src="Bohey Dulang.jpeg">
+				</a>
+				<h5>Bohey Dulang</h5>
+				<h6>5 Days 4 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/nature-s-playground">
+					<img src="Bako National Park.jpeg">
+				</a>
+				<h5>Bako National Park</h5>
+				<h6>5 Days 4 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/finding-solace-in-sekinchan">
+					<img src="WhatsApp Image 2022-11-06 at 11.46.49 AM.jpeg">
+				</a>
+				<h5>Sekinchan</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/jolly-in-the-jungle">
+					<img src="Royal Belum State Park.jpeg">
+				</a>
+				<h5>Royal Belum State Park</h5>
+				<h6>7 Days 6 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/altitude-and-adrenaline-combined">
+					<img src="Crocker Range.jpeg">
+				</a>
+				<h5>Crocker Range National Park</h5>
+				<h6>4 Days 3 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/the-mystical-langkawi">
+					<img src="Langkawi.jpeg">
+				</a>
+				<h5>Langkawi</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/explore-the-wonders-of-sabah">
+					<img src="Sabah.jpeg">
+				</a>
+				<h5>Sabah</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/short-trip-of-history-and-culture-in-terengganu">
+					<img src="Terengganu.jpeg">
+				</a>
+				<h5>Terengganu</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+			<div class="box">
+				<a href="https://www.malaysia.travel/travel-ideas/a-sweeping-tour-of-kuala-lumpur">
+					<img src="Kuala Lumpur.jpeg">
+				</a>
+				<h5>Kuala Lumpur</h5>
+				<h6>3 Days 2 Nights</h6>
+				<div class="sale">
+					<h4>Deals</h4>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!----contact--->
+	<section class="contact" id="about">
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2022 All rights reserved | Travel Team</p>
+	</div>
+
+	<!----scroll top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!----custom js link--->
+	<script src="script.js"></script>
+	
+</body>
+</html>

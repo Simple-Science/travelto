@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive ecommerce website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Travel</a>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#deals">Places</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+
+		<div class="header-icons">
+			
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<div class="sidebar close">
+		<div class="logo-details">
+		  <i class='bx bxs-plane-take-off'></i>
+		  <span class="logo_name">Travel</span>
+		</div>
+		<ul class="nav-links">
+		  <li>
+			<a href="#">
+			  <i class='bx bx-grid-alt' ></i>
+			  <span class="link_name">Dashboard</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="index.html">Dashboard</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-collection' ></i>
+				<span class="link_name">Category</span>
+			  </a>
+			  <i class='bx bxs-chevron-down arrow' ></i>
+			</div>
+			<ul class="sub-menu">
+				<li><a class="link_name" href="#">Category</a></li>
+				<li><a href="Johor Bahru.html">Johor Bahru</a></li>
+				<li><a href="Pahang.html">Pahang</a></li>
+				<li><a href="Terengganu.html">Terengganu</a></li>
+				<li><a href="Sabah & Sarawak.html">Sabah & Sarawak</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-plug' ></i>
+				<span class="link_name">Download on Mobile</span>
+			  </a>
+			</div>
+			<ul class="sub-menu">
+			  <li><a class="link_name" href="#">Download on Mobile</a></li>
+			</ul>
+		</li>
+		  <li>
+			<a href="#">
+			  <i class='bx bx-log-out'></i>
+			  <span class="link_name">Logout</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="parallax.html">Logout</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+				<i class='bx bx-info-circle'></i>
+			  <span class="link_name">More Coming Soon</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="#">More Coming Soon</a></li>
+			</ul>
+		  </li>
+		  <li>
+		<div class="profile-details">
+		  <div class="profile-content">
+			<!--<img src="image/profile.jpg" alt="profileImg">-->
+		  </div>
+		  <div class="name-job">
+			<div class="profile_name">More Coming</div>
+			<div class="job">Soon</div>
+		  </div>
+		  <i class='bx bx-info-circle' ></i>
+		</div>
+	  </li>
+	</ul>
+	  </div>
+	  <script>
+	  let arrow = document.querySelectorAll(".arrow");
+	  for (var i = 0; i < arrow.length; i++) {
+		arrow[i].addEventListener("click", (e)=>{
+	   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+	   arrowParent.classList.toggle("showMenu");
+		});
+	  }
+	  let sidebar = document.querySelector(".sidebar");
+	  let sidebarBtn = document.querySelector(".bx-menu");
+	  console.log(sidebarBtn);
+	  sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	  });
+	  </script>
+
+	<section class="home" id="home">
+        <div class="home-text">
+            <h1>Travel<br><span>to Terengganu</span></h1>
+            <p>Scroll below to choose your destination</p>
+            <a href="#deals" class="btn">View Places</a>
+        </div>
+    </section>
+
+	
+	<!--background-->
+	<section class="new" id="deals">
+		<style>
+			body{
+		background-image: url(Terengganu\ Bg.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+			}
+		</style>
+		<div class="center-text">
+			<h2>Places in Terengganu</h2>
+		</div>
+		<!--pictures & content-->
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298320-d8281454-Reviews-Kampung_China_Chinatown-Kuala_Terengganu_Terengganu.html">
+					<img src="Chinatown.jpeg">
+				</a>
+				</a>
+				<h5>Chinatown</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298320-d4014250-Reviews-Pasar_Payang-Kuala_Terengganu_Terengganu.html">
+					<img src="Pasar Payang.jpeg">
+				</a>
+				<h5>Pasar Payang</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298320-d15093114-Reviews-Ho_Ann_Kiong_Temple-Kuala_Terengganu_Terengganu.html">
+					<img src="Ho Ann Kiang Temple.jpeg">
+				</a>
+				</a>
+				<h5>Ho Ann Kiang Temple</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298318-d481163-Reviews-Terengganu_State_Museum-Terengganu.html">
+					<img src="Terengganu State Museum.jpeg">
+				</a>
+				</a>
+				<h5>Terengganu State Museum</h5>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+			<a href="https://www.tripadvisor.com.my/Attraction_Review-g298320-d2526159-Reviews-Crystal_Mosque-Kuala_Terengganu_Terengganu.html">
+				<img src="Crystal Mosque.jpeg">
+			</a>
+				<h5>Crystal Mosque</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/AttractionProductReview-g298320-d13335686-Terengganu_River_Safari_Trip-Kuala_Terengganu_Terengganu.html">
+					<img src="Terengganu River.jpeg">
+				</a>
+				<h5>Terengganu River</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://itc.gov.my/listings/masjid-abidin-kuala-terengganu/">
+					<img src="Abidin Mosque.jpeg">
+				</a>
+				<h5>Abidin Mosque</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Hotel_Review-g298320-d597158-Reviews-ERYAbySURIA_Merang-Kuala_Terengganu_Terengganu.html">
+					<img src="Merang Beach.jpeg">
+				</a>
+				<h5>Merang Beach</h5>
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Tourism-g3567216-Pantai_Penarik_Terengganu-Vacations.html">
+					<img src="Pantai Penarik.jpeg">
+				</a>
+				<h5>Pantai Penarik</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g304001-d8666603-Reviews-Kapas_Island-Pulau_Kapas_Terengganu.html">
+					<img src="Kapas Island.jpeg">
+				</a>
+				<h5>Kapas Island</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Hotel_Review-g6856853-d1788046-Reviews-Tenggol_Island_Beach_Resort-Pulau_Tenggol_Terengganu.html">
+					<img src="Tenggol Island.jpeg">
+				</a>
+				<h5>Tenggol Island</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298320-d4450639-Reviews-Taman_Tamadun_Islam-Kuala_Terengganu_Terengganu.html">
+					<img src="Taman Tamadun Islam.jpeg">
+				</a>
+				<h5>Taman Tamadun Islam</h5>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!----contact--->
+	<section class="contact" id="about">
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2022 All rights reserved | Travel Team</p>
+	</div>
+
+	<!----scroll top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!----custom js link--->
+	<script src="script.js"></script>
+	
+</body>
+</html>

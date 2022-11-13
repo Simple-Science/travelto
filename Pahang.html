@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsive ecommerce website design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!----header--->
+	<header>
+		<a href="#" class="logo">Travel</a>
+
+		<ul class="navlist">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#deals">Places</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+
+		<div class="header-icons">
+			
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<div class="sidebar close">
+		<div class="logo-details">
+		  <i class='bx bxs-plane-take-off'></i>
+		  <span class="logo_name">Travel</span>
+		</div>
+		<ul class="nav-links">
+		  <li>
+			<a href="#">
+			  <i class='bx bx-grid-alt' ></i>
+			  <span class="link_name">Dashboard</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="index.html">Dashboard</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-collection' ></i>
+				<span class="link_name">Category</span>
+			  </a>
+			  <i class='bx bxs-chevron-down arrow' ></i>
+			</div>
+			<ul class="sub-menu">
+				<li><a class="link_name" href="#">Category</a></li>
+				<li><a href="Johor Bahru.html">Johor Bahru</a></li>
+				<li><a href="Pahang.html">Pahang</a></li>
+				<li><a href="Terengganu.html">Terengganu</a></li>
+				<li><a href="Sabah & Sarawak.html">Sabah & Sarawak</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<div class="iocn-link">
+			  <a href="#">
+				<i class='bx bx-plug' ></i>
+				<span class="link_name">Download on Mobile</span>
+			  </a>
+			</div>
+			<ul class="sub-menu">
+			  <li><a class="link_name" href="#">Download on Mobile</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+			  <i class='bx bx-log-out'></i>
+			  <span class="link_name">Logout</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="parallax.html">Logout</a></li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="#">
+				<i class='bx bx-info-circle'></i>
+			  <span class="link_name">More Coming Soon</span>
+			</a>
+			<ul class="sub-menu blank">
+			  <li><a class="link_name" href="#">More Coming Soon</a></li>
+			</ul>
+		  </li>
+		  <li>
+		<div class="profile-details">
+		  <div class="profile-content">
+			<!--<img src="image/profile.jpg" alt="profileImg">-->
+		  </div>
+		  <div class="name-job">
+			<div class="profile_name">More Coming</div>
+			<div class="job">Soon</div>
+		  </div>
+		  <i class='bx bx-info-circle' ></i>
+		</div>
+	  </li>
+	</ul>
+	  </div>
+	  <script>
+	  let arrow = document.querySelectorAll(".arrow");
+	  for (var i = 0; i < arrow.length; i++) {
+		arrow[i].addEventListener("click", (e)=>{
+	   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+	   arrowParent.classList.toggle("showMenu");
+		});
+	  }
+	  let sidebar = document.querySelector(".sidebar");
+	  let sidebarBtn = document.querySelector(".bx-menu");
+	  console.log(sidebarBtn);
+	  sidebarBtn.addEventListener("click", ()=>{
+		sidebar.classList.toggle("close");
+	  });
+	  </script>
+
+	<section class="home" id="home">
+        <div class="home-text">
+            <h1>Travel to <br><span>Pahang</span></h1>
+            <p>Scroll below to choose your destination</p>
+            <a href="#deals" class="btn">View Places</a>
+        </div>
+    </section>
+
+	
+	<!--background-->
+	<section class="new" id="deals">
+		<style>
+			body{
+		background-image: url(Pahang\ bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+			}
+		</style>
+		<div class="center-text">
+			<h2>Places in Pahang</h2>
+		</div>
+		<!--pictures & content-->
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Tourism-g3239575-Bukit_Tinggi_Bentong_Pahang-Vacations.html">
+				<img src="Bukit tinggi.jpg">
+				</a>
+				<h5>Bukit Tinggi</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g2301861-d3732363-Reviews-Lentang_Forest_Recretional_Park-Bentong_Pahang.html">
+					<img src="Lentang Forest Reserve.jpg">
+				</a>
+				<h5>Lentang Forest Reserve</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g2301861-d12206814-Reviews-Bilut_Extreme_Park-Bentong_Pahang.html">
+					<img src="Bilut Extreme Park.jpg">
+				</a>
+				<h5>Bilut Extreme Park</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Hotel_Review-g2301861-d8430072-Reviews-ERYAbySURIA_Hot_Spring_Bentong-Bentong_Pahang.html">
+					<img src="Bentong Hot springs.jpg">
+				</a>
+				<h5>Bentong Hot Springs</h5>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g2301861-d2462371-Reviews-Chamang_Waterfall-Bentong_Pahang.html">
+					<img src="Chamang Waterfall.jpg">
+				</a>
+				<h5>Chamang Waterfall</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g1590611-d6856080-Reviews-Jimmy_s_Durian_Orchard-Karak_Bentong_Pahang.html">
+					<img src="Jimmy's Durian Orchard.jpg">
+				</a>
+				<h5>Jimmy's Durian Orchard</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298292-d457043-Reviews-Boh_s_Tea_Centre-Cameron_Highlands_Pahang.html">
+					<img src="Boh Tea Centre.jpeg">
+				</a>
+				<h5>Boh Tea Centre</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298293-d1034350-Reviews-Mossy_Forest-Brinchang_Cameron_Highlands_Pahang.html">
+					<img src="Mossy Forest Cameron Highlands.jpg">
+				</a>
+				<h5>Mossy Forest</h5>
+			</div>
+	</section>
+	<section>
+		<div class="new-content">
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298292-d1972042-Reviews-Raju_Hill_Strawberry_Farm-Cameron_Highlands_Pahang.html">
+					<img src="Raaju's Hill Strawberry Farm.jpg">
+				</a>
+				<h5>Raaju's Hill Strawberry Farm</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298293-d4239016-Reviews-Cameron_Lavender-Brinchang_Cameron_Highlands_Pahang.html">
+					<img src="Lavender Gardens.jpg">
+				</a>
+				<h5>Lavender Gardens</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Attraction_Review-g298292-d457045-Reviews-Cactus_Valley-Cameron_Highlands_Pahang.html">
+					<img src="Cactus Valley.jpg">
+				</a>
+				<h5>Cactus Valley</h5>
+			</div>
+
+			<div class="box">
+				<a href="https://www.tripadvisor.com.my/Tourism-g660784-Genting_Highlands_Pahang-Vacations.html">
+					<img src="Genting Highlands.jpg">
+				</a>
+				<h5>Genting Highlands</h5>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!----contact--->
+	<section class="contact" id="about">
+
+	</section>
+
+	<div class="last-text">
+		<p>Copyright © 2022 All rights reserved | Travel Team</p>
+	</div>
+
+	<!----scroll top--->
+	<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!----custom js link--->
+	<script src="script.js"></script>
+	
+</body>
+</html>
